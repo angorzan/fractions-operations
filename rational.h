@@ -32,11 +32,11 @@ public:
    Rational operator+() const;
    Rational operator-() const;
 
-//   bool operator==(const Rational& other) const;
-//   bool operator>=(const Rational& other) const;
-//   bool operator<=(const Rational& other) const;
-//   bool operator>(const Rational& other) const;
-//   bool operator<(const Rational& other) const;
+   bool operator==(const Rational& other) const;
+   bool operator>=(const Rational& other) const;
+   bool operator<=(const Rational& other) const;
+   bool operator>(const Rational& other) const;
+   bool operator<(const Rational& other) const;
 
 public:
    int numer;
