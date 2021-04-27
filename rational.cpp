@@ -38,6 +38,10 @@ Rational Rational::operator-(const Rational& r) const{
     Rational result(r.numer*this->denom-this->numer*r.denom, r.denom*this->denom);
     return result;
 }
+Rational Rational::operator/(const Rational& r) const{
+    Rational result(r.numer+this->denom,r.denom*this->numer);
+    return result;
+}
 Rational operator-(const Rational& r, int i){
     Rational result(r.numer-i*r.denom,r.denom);
     return result;
@@ -56,7 +60,11 @@ Rational operator*(int i, const Rational& r){
     return result;
 }
 
-Rational operator/(const Rational& r, int i);
-Rational operator/(int i, const Rational& r);
-
-
+Rational operator/(const Rational& r, int i){
+    Rational result(r.numer,r.denom*i);
+    return result;
+}
+Rational operator/(int i, const Rational& r){
+    Rational result(i*r.denom,r.numer);
+    return result;
+}
