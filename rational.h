@@ -24,12 +24,12 @@ public:
    static Rational normalize(const Rational& other);
    static Rational normalized(int numerator, int denominator);
 
-//   Rational operator+(const Rational& other) const;
+   Rational operator+(const Rational& other) const;
 //   Rational operator-(const Rational& other) const;
 //   Rational operator*(const Rational& other) const;
 //   Rational operator/(const Rational& other) const;
 
-//   Rational operator+() const;
+   Rational operator+() const;
 //   Rational operator-() const;
 
 //   bool operator==(const Rational& other) const;
