@@ -25,8 +25,8 @@ public:
    static Rational normalized(int numerator, int denominator);
 
    Rational operator+(const Rational& other) const;
-//   Rational operator-(const Rational& other) const;
-//   Rational operator*(const Rational& other) const;
+   Rational operator-(const Rational& other) const;
+   Rational operator*(const Rational& other) const;
 //   Rational operator/(const Rational& other) const;
 
    Rational operator+() const;
